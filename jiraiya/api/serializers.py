@@ -1,7 +1,7 @@
-from rest_framework import serialzers
+from rest_framework import serializers
 from .models import Team
 
-class TeamSerializer(serialzers.ModelSerializer):
+class TeamSerializer(serializers.ModelSerializer):
     class Meta:
         model = Team
         fields = ('id', 'team_name', 'player_count', 'coach_name', 'goals_scored')
